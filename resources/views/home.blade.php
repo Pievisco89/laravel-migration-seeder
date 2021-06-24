@@ -4,7 +4,7 @@
 
     <section class="container">
 
-      <h1 class="mb-5 text-center">Pacchetti viaggi:</h1>
+      <h1 class="m-5 text-center">Pacchetti viaggi:</h1>
         
       <section>
 
@@ -19,7 +19,7 @@
             </tr>
           </thead>
           <tbody>
-            
+
             @foreach ($holidays as $holiday)
                         
               <tr>
