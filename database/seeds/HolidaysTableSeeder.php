@@ -31,8 +31,8 @@ class HolidaysTableSeeder extends Seeder
     }
 
     private function typeRandom(){
-        $arr = ['hotel','boat','apartment','touristic village
-        ','farmhouse'];
+        $arr = ['Hotel','Boat Trip','Apartment','Touristic Village
+        ','Farmhouse'];
         shuffle($arr);
         return $arr[0];
     }
