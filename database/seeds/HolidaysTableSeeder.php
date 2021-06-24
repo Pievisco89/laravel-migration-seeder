@@ -19,9 +19,9 @@ class HolidaysTableSeeder extends Seeder
             $new_holiday->reference = $faker->bothify('?????-########');
             $new_holiday->place = $faker->city();
             $new_holiday->state = $faker->state();
-            $new_holiday->price = $faker->randomFloat(2, 300, 9000); 
-            $new_holiday->duration = $faker->numberBetween(2, 60);
-            $new_holiday->date_start = $faker->date();
+            $new_holiday->price = $faker->randomFloat(2, 300, 4500); 
+            $new_holiday->duration = $faker->numberBetween(2, 14);
+            $new_holiday->date_start = $faker->dateTimeInInterval('+3 days', '+10 days');
             $new_holiday->type = $this->typeRandom();
             $new_holiday->service = $faker->text(10);
             $new_holiday->description = $faker->text(250);

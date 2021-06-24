@@ -13,6 +13,7 @@
             <tr>
               <th scope="col">Stato:</th>
               <th scope="col">Città</th>
+              <th scope="col">Partenza:</th>
               <th scope="col">Giorni</th>
               <th scope="col">Tipo:</th>
               <th scope="col">Prezzo:</th>
@@ -25,6 +26,7 @@
               <tr>
                 <td>{{ $holiday['state'] }}</td>
                 <td>{{ $holiday['place'] }}</td>
+                <td>{{ $holiday['date_start'] }}</td>
                 <td>{{ $holiday['duration'] }}</td>
                 <td>{{ $holiday['type'] }}</td>
                 <td>{{ $holiday['price'] }}€</td>
@@ -37,7 +39,7 @@
 
       </section>
 
-      <section>
+      <section class="mt-3">
         {{ $holidays->links() }}
       </section>
 
